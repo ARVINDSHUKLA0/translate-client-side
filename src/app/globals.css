@@ -1,0 +1,114 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.fs-8{
+  font-size: 8px;
+}
+.fs-10{
+  font-size: 10px;
+}
+.fs-12{
+  font-size: 12px;
+}
+.fs-13{
+  font-size: 13px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-15{
+  font-size: 15px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-17{
+  font-size: 17px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.fs-19{
+  font-size: 19px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.fs-22{
+  font-size: 22px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.lsit-style{
+  list-style: none;
+}
+.text-decoration-none{
+  text-decoration: none;
+}
+ .customfontplaceHolder::placeholder{
+  font-size: 14px !important;
+ }
+
+body{
+  background-color: #f6f7f3e3;
+}
+:root { 
+    --color-primary: #2563EB;
+    --color-primary-hover: #1d4ed8;
+    --color-primary-light: #eef1ff;
+    --color-bg: #f6f7f3;
+    --color-white: #ffffff;
+    --color-text: #0f172a;
+    --color-muted: #94a0b4;
+    --color-border: #e6e9f0;
+    --color-success-bg: #e2f8ef;
+    --color-success: #059669;
+    --color-success-light: #10B981; 
+    --color-warning-bg: #fff3d6;
+    --color-warning: #b45309; 
+    --color-danger-bg: #ffe8e8;
+    --color-danger: #dc2626;
+    --color-sidebar-bg: #0f172a;
+    --color-sidebar-text: #cbd5e1;
+    --color-sidebar-text-muted: #5b6885;
+    --color-sidebar-item: #b7c1d9;
+    --color-sidebar-hover: #182a50;
+    --color-sidebar-border: #1f2e52;
+    --color-scrollbar: #263657;
+    --color-admin-bg: #eef1f5;
+    --color-admin-text: #475569;
+    --color-profile-bg: #10b981;
+    --color-profile-role: #8291af;
+    --color-focus: #0B5ED7;
+    --color-chart-last: #d97706;
+    --color-avatar-bg: #f59e0b;
+    --color-avatar-text: #111827;
+    --color-dot: #ef4444;   
+    --color-accent-lime: #baff35;
+}
+
+.container-custom {
+    width: 90%;
+    margin-left: auto;
+    overflow: hidden;
+    margin-right: auto;
+}
+.text-black{
+  color: black;
+}
+@media screen and (min-width: 0px) and (max-width: 525px) {
+  .fs-22{
+    font-size: 18px;
+  }
+  .container-custom{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 526px) and (max-width: 1024) {
+.container-custom{
+    width: 100%;
+  }
+}

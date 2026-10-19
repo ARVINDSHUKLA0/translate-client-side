@@ -1,0 +1,178 @@
+.eyebrow,.kicker{
+  font-size:12px !important;
+  font-weight:700;
+  letter-spacing:1.4px;
+  color:#68756e
+}
+
+.visual{
+  min-height:470px;
+  background:#ecefe8;
+  border:1px solid #dfe4dc;
+  border-radius:32px;
+  overflow:hidden;
+  position:relative
+}
+
+.visual:after{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  right:-5px;
+  top:-5px;
+  background:#c9f36a;
+  border-radius:0 0 0 100%
+}
+
+.context-box{
+  background:#fff;
+  border:1px solid #dfe4dc;
+  border-radius:18px;
+  padding:24px;
+  position:relative;
+  z-index:2
+}
+
+.visual .context-box{
+  position:absolute
+}
+
+.visual-one{
+  left:36px;
+  top:40px;
+  width:55%
+}
+
+.visual-two{
+  right:36px;
+  bottom:36px;
+  width:48%
+}
+
+.context-box h4{
+  margin:0 0 7px;
+  font-size:20px
+}
+
+.context-line{
+  height:7px;
+  background:#dfe6dd;
+  border-radius:20px;
+  margin:9px 0
+}
+
+.w-70{width:70%}
+.w-65{width:65%}
+
+.solution-visual{
+  min-height:300px;
+  background:#e9eee6;
+  border:1px solid #dfe4dc;
+  border-radius:28px;
+  padding:24px;
+  position:relative;
+  overflow:hidden
+}
+
+.solution-visual .context-box{
+  position:absolute;
+  left:28px;
+  top:32px;
+  width:60%
+}
+
+.team-strip{
+  background:#dfe4dc;
+  border:1px solid #dfe4dc;
+  border-radius:20px;
+  overflow:hidden
+}
+
+.team-strip>div>div{
+  height:100%;
+  padding:22px;
+  background:#fff
+}
+
+.api{
+  background:#14271f;
+  color:#e9f2eb;
+  border-radius:22px;
+  padding:28px;
+  font:13px/1.8 ui-monospace,SFMono-Regular,Menlo,monospace;
+  overflow:auto
+}
+
+.accent{color:#c9f36a}
+
+.cta{
+  background:#12251d;
+  color:#fff;
+  border-radius:32px;
+  padding:64px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:40px
+}
+
+.cta h2{
+  font-size:clamp(40px,5vw,64px);
+  line-height:1;
+  margin-bottom:15px
+}
+
+.cta p{
+  color:#b8c1bb;
+  margin:0
+}
+
+.btn-lime{
+  background:#c9f36a;
+  color:#12251d;
+  border:0;
+  white-space:nowrap
+}
+
+@media(max-width:767px){
+  .visual{
+    min-height:360px;
+    border-radius:24px
+  }
+
+  .visual-one{
+    left:18px;
+    top:22px;
+    width:68%
+  }
+
+  .visual-two{
+    right:18px;
+    bottom:18px;
+    width:58%
+  }
+
+  .solution-visual{
+    min-height:260px;
+    border-radius:22px
+  }
+
+  .solution-visual .context-box{
+    left:20px;
+    top:25px;
+    width:75%
+  }
+
+  .cta{
+    padding:35px 25px;
+    flex-direction:column;
+    align-items:flex-start
+  }
+
+  .footer-bottom{display:block}
+  .footer-bottom span{
+    display:block;
+    margin-top:8px
+  }
+}

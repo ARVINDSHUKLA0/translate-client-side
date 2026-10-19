@@ -1,0 +1,137 @@
+.leftSide {
+  background-color: #f7f8fb;
+}
+
+.logo {
+  color: #10203b;
+  letter-spacing: -0.5px;
+}
+
+.heading {
+  color: #10203b;
+  font-size: 1.8rem;
+}
+
+.signupForm .form-label {
+  color: #26354d; 
+  margin-bottom: 7px;
+}
+.custom-hover:hover{
+   color: blue !important; 
+}
+.signupForm .form-control {
+  height: 50px;
+  border-radius: 9px;
+  border: 1px solid #dfe3ea;
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.signupForm .form-control::placeholder {
+  color: #8b94a3;
+}
+
+.signupForm .form-control:focus {
+  border-color: #2f63e9;
+  box-shadow: 0 0 0 3px rgba(47, 99, 233, 0.1);
+}
+
+.signupForm .btn-primary {
+  height: 50px;
+  border: 0;
+  border-radius: 9px;
+  background-color: #2f63e9;
+  font-size: 16px;
+}
+
+.signupForm .btn-primary:hover {
+  background-color: #2455d5;
+}
+
+.rightSide {
+  min-height: 100vh;
+  padding: 30px 10px;
+
+  background: linear-gradient(
+    155deg,
+    #0b1120 0%,
+    #0b1120 45%,
+    #16247d 75%,
+    #2f4bff 100%
+  );
+}
+
+.glow {
+  top: -60px;
+  right: 80px;
+
+  width: 260px;
+  height: 260px;
+
+  background: radial-gradient(
+    circle,
+    rgba(180, 120, 40, 0.35) 0%,
+    rgba(180, 120, 40, 0) 70%
+  );
+
+  filter: blur(20px);
+}
+
+.testimonialCard {
+  max-width: 380px;
+  width: 85%;
+
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(6px);
+}
+
+.stars {
+  color: #f5b942;
+  letter-spacing: 2px;
+}
+
+.quoteText {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  font-size: 0.75rem;
+  background-color: #3b5bfd;
+}
+
+.avatarName {
+  font-size: 0.9rem;
+}
+
+.avatarRole {
+  font-size: 0.78rem;
+}
+ 
+
+@media (max-width: 767px) {
+
+  .leftSide {
+    min-height: auto;
+  }
+
+  .rightSide {
+    min-height: 450px;
+  }
+
+  .heading {
+    font-size: 1.55rem;
+  }
+
+  .testimonialCard {
+    width: 90%;
+  }
+
+  .glow {
+    right: -50px;
+  }
+}

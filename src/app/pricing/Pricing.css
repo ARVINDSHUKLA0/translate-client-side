@@ -1,0 +1,157 @@
+.eyebrow,
+.kicker {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #68756e;
+}
+
+.pricing-lead {
+  max-width: 620px;
+}
+
+.pricing-toggle {
+  background: #e9eee6;
+}
+
+.pricing-toggle .active {
+  background: #12251d;
+  color: #fff;
+}
+
+.price-card {
+  background: #fff;
+  border: 1px solid #dfe4dc;
+  position: relative;
+}
+
+.price-card.popular {
+  background: #f0f5eb;
+  border-color: #c9d4c3;
+}
+
+.badge-popular {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #c9f36a;
+  color: #12251d;
+  padding: 6px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .7px;
+}
+
+.price {
+  font-size: 44px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 28px 0;
+  color: #12251d;
+}
+
+.price small {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.custom-price {
+  font-size: 40px;
+}
+
+.price-card li {
+  padding: 8px 0;
+  color: #4f5b54;
+}
+
+.pricing-table {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  border: 1px solid #dfe4dc;
+  border-radius: 16px;
+  overflow: hidden;
+  min-width: 700px;
+}
+
+.pricing-table > div {
+  padding: 16px 18px;
+  border-right: 1px solid #dfe4dc;
+  border-bottom: 1px solid #dfe4dc;
+  color: #4f5b54;
+}
+
+.pricing-table .table-head {
+  background: #e9eee6;
+  font-weight: 700;
+  color: #12251d;
+}
+
+.feature-card {
+  background: #f0f3ed;
+  border: 1px solid #dfe4dc;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #12251d;
+}
+
+.feature-card p {
+  color: #68756e;
+  margin: 0;
+}
+
+.pricing-cta {
+  background: #12251d;
+  color: #fff;
+}
+
+.pricing-cta .eyebrow {
+  color: #aab6ae;
+}
+
+.btn-lime {
+  background: #c9f36a;
+  color: #12251d;
+  border: 0;
+}
+
+.btn-lime:hover {
+  background: #b9e95a;
+  color: #12251d;
+}
+
+.footer-link {
+  color: #68756e;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #12251d;
+}
+
+@media (max-width: 767px) {
+  .price {
+    font-size: 38px;
+  }
+
+  .custom-price {
+    font-size: 34px;
+  }
+
+  .pricing-table {
+    min-width: 650px;
+  }
+
+  .pricing-toggle {
+    width: 100%;
+  }
+
+  .pricing-toggle .btn {
+    flex: 1;
+  }
+}

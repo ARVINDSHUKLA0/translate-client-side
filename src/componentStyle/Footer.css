@@ -1,0 +1,49 @@
+.footer-section {
+  background-color: #0e1420;
+  color: #a8b0bd; 
+  overflow: hidden; 
+  
+}
+
+.footer-logo {
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer-logo .dot {
+  color: #c6f135;
+  font-size: 1.2rem;
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #8b93a3;
+  max-width: 300px;
+}
+
+.footer-heading {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.footer-link {
+  font-size: 0.9rem;
+  color: #c3c9d3;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #c6f135;
+}
+
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom-text {
+  font-size: 0.8rem;
+  color: #6b7280;
+}

@@ -1,0 +1,437 @@
+
+.dt-page {
+  min-height: 68vh;
+  color: #142033;
+}
+
+.dt-intro {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dt-eyebrow {
+  display: inline-block;
+  color: #0268fe;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  margin-bottom: 12px;
+}
+
+.dt-intro h1 {
+  font-size: clamp(30px,4vw,44px);
+  font-weight: 800;
+  letter-spacing: -1.3px;
+  margin: 0 0 12px;
+}
+
+.dt-intro p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #667085;
+  margin: 0;
+}
+
+.dt-card, .dt-summary {
+  border: 1px solid #e6eaf0;
+  border-radius: 22px;
+  padding: clamp(20px,3vw,32px);
+  background: #fff;
+  box-shadow: 0 12px 38px rgba(22,45,80,.045);
+}
+
+.dt-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.dt-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #eaf2ff;
+  color: #0268fe;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.dt-card-heading h2 {
+  font-size: 18px;
+  font-weight: 750;
+  margin: 2px 0 5px;
+}
+
+.dt-card-heading p {
+  font-size: 13px;
+  color: #7b8798;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dt-dropzone {
+  margin-top: 20px;
+  min-height: 210px;
+  padding: 24px 18px;
+  border: 1.5px dashed #b8cbed;
+  border-radius: 17px;
+  background: #f8fbff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 9px;
+  color: #142033;
+  transition: border-color .2s,background .2s;
+}
+
+.dt-dropzone:hover, .dt-dropzone-selected {
+  border-color: #0268fe;
+  background: #f2f7ff;
+}
+
+.dt-upload-icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  background: #e5efff;
+  color: #0268fe;
+  font-size: 23px;
+  margin-bottom: 4px;
+}
+
+.dt-dropzone strong {
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.dt-dropzone small {
+  font-size: 12px;
+  color: #778399;
+  line-height: 1.5;
+}
+
+.dt-choose {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 9px 17px;
+  border-radius: 9px;
+  background: #0268fe;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dt-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #344054;
+  margin-bottom: 8px;
+}
+
+.dt-select {
+  min-height: 48px;
+  border-color: #d9e0e9;
+  border-radius: 11px;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.dt-select:focus {
+  border-color: #0268fe;
+  box-shadow: 0 0 0 3px rgba(2,104,254,.1);
+}
+
+.dt-submit {
+  min-height: 52px;
+  border-radius: 12px;
+  background: #0268fe;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid #0268fe;
+}
+
+.dt-submit:hover:not(:disabled) {
+  background: #0054d1;
+  border-color: #0054d1;
+  color: #fff;
+}
+
+.dt-submit:disabled {
+  opacity: .75;
+}
+
+.dt-privacy {
+  text-align: center;
+  font-size: 12px;
+  color: #8792a4;
+  margin: 13px 0 0;
+}
+
+.dt-summary {
+  background: #f8faff;
+  display: flex;
+  flex-direction: column;
+}
+
+.dt-summary-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6efff;
+  color: #0268fe;
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.dt-summary h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.dt-summary-copy {
+  font-size: 13px;
+  color: #758198;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dt-rule {
+  height: 1px;
+  background: #e2e8f1;
+  margin: 23px 0 10px;
+}
+
+.dt-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #e8edf5;
+  font-size: 13px;
+}
+
+.dt-summary-row span {
+  color: #748096;
+}
+
+.dt-summary-row strong {
+  text-align: right;
+  color: #26364d;
+  font-weight: 700;
+}
+
+.dt-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.dt-total span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dt-total strong {
+  font-size: 28px;
+  letter-spacing: -.7px;
+  color: #0268fe;
+}
+
+.dt-settings-note {
+  font-size: 12px;
+  color: #7a8699;
+  line-height: 1.5;
+  margin: 12px 0 0;
+}
+
+.dt-note {
+  display: flex;
+  gap: 10px;
+  padding: 13px;
+  margin-top: 24px;
+  border-radius: 12px;
+  background: #edf4ff;
+  color: #566984;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.dt-note i {
+  color: #0268fe;
+  margin-top: 2px;
+}
+
+.dt-success {
+  border-radius: 10px;
+  padding: 11px 12px;
+  background: #eaf8ef;
+  color: #197344;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   STEP 02 - Automatic document analysis (same look as step 01)
+   ========================================================= */
+.dt-auto-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.dt-auto-info h2 {
+  font-size: 18px;
+  font-weight: 750;
+  margin: 2px 0 5px;
+}
+
+.dt-auto-info p {
+  font-size: 13px;
+  color: #7b8798;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.dt-process-list {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dt-process-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #344054;
+  line-height: 1.5;
+}
+
+.dt-process-list i {
+  flex: 0 0 auto;
+  color: #0268fe;
+  font-size: 15px;
+}
+
+/* =========================================================
+   ADD-ONS (No Certification / Certified / Express ...)
+   Always 2 tiles per row. Name on top, price below,
+   so the price can never overflow the tile.
+   ========================================================= */
+.dt-addons {
+  margin-top: 26px;
+}
+
+.dt-addons-title {
+  font-size: 15px;
+  font-weight: 750;
+  color: #142033;
+  margin: 0 0 12px;
+}
+
+.dt-addons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.dt-addon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 11px 12px;
+  border: 1px solid #dfe5ee;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+
+.dt-addon:hover {
+  border-color: #9bbcf5;
+}
+
+.dt-addon-selected {
+  border-color: #0268fe;
+  background: #eff6ff;
+  box-shadow: 0 0 0 3px rgba(2,104,254,.08);
+}
+
+.dt-addon-check {
+  flex: 0 0 auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dt-addon-text {
+  /* display: flex; */
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.dt-addon-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #142033;
+  text-transform: capitalize;
+  overflow-wrap: anywhere;
+}
+
+.dt-addon-price {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0268fe;
+  white-space: nowrap;
+}
+
+@media (max-width: 340px) {
+  .dt-addons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:575.98px) {
+  .dt-page {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+  }
+
+  .dt-card, .dt-summary {
+    border-radius: 17px;
+  }
+
+  .dt-dropzone {
+    min-height: 190px;
+  }
+
+  .dt-total strong {
+    font-size: 24px;
+  }
+}

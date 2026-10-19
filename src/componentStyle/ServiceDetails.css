@@ -1,0 +1,231 @@
+.cs-details-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cs-details-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2001;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cs-details-content {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cs-details-close {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1;
+}
+ 
+
+.cs-gallery {
+    --thumb: 76px;
+    --gap: 8px;
+    --arrow: 28px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cs-thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    width: var(--thumb);
+    flex-shrink: 0; 
+}
+
+.cs-thumbs-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    max-height: calc(var(--thumb) * 3 + var(--gap) * 2);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.cs-thumbs-list::-webkit-scrollbar {
+    display: none;
+}
+
+.cs-thumb {
+    flex: 0 0 var(--thumb);
+    width: var(--thumb);
+    height: var(--thumb);
+    padding: 0;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f8f9fa;
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: border-color 0.2s ease;
+}
+
+.cs-thumb img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.cs-thumb:hover {
+    border-color: #9ec5fe;
+}
+
+.cs-thumb.is-active {
+    border-color: var(--bs-primary, #0d6efd);
+}
+
+.cs-thumbs-arrow {
+    width: 100%;
+    height: var(--arrow);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    background: #fff;
+    color: var(--bs-primary, #0d6efd);
+    cursor: pointer;
+    transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.cs-thumbs-arrow:hover:not(:disabled) {
+    background: #f1f5ff;
+}
+
+.cs-thumbs-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.cs-main-image {
+    flex: 1 1 0;
+    min-width: 0;
+    height: calc(
+        var(--thumb) * 3 + var(--gap) * 2 +
+        (var(--arrow) + var(--gap)) * 2
+    );
+}
+
+.cs-main-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* ---------- PRICE BOX ---------- */
+
+.cs-stat-label {
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
+.cs-stat-value {
+    font-size: 0.92rem;
+}
+
+/* ---------- DESCRIPTION ---------- */
+
+.cs-details-description {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.cs-details-description img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cs-details-description iframe,
+.cs-details-description video {
+    max-width: 100%;
+}
+
+.cs-details-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- RESPONSIVE DRAWER WIDTH ---------- */
+
+@media (max-width: 1399.98px) {
+    .cs-details-drawer {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .cs-details-drawer {
+        width: 70%;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 575.98px) {
+
+    .cs-details-drawer {
+        width: 100vw;
+    }
+
+    .cs-gallery {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .cs-main-image {
+        order: 1;
+        width: 100%;
+        flex: none;
+        height: 240px;
+    }
+
+    .cs-thumbs {
+        order: 2;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .cs-thumbs-arrow {
+        display: none;
+    }
+
+    .cs-thumbs-list {
+        flex-direction: row;
+        width: 100%;
+        max-height: none;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+    }
+
+    .cs-thumb {
+        flex: 1 0 calc(25% - 6px);
+        width: auto;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+}

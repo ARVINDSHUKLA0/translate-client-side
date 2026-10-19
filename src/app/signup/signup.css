@@ -1,0 +1,97 @@
+.leftSide {
+  background-color: #f7f8fb;
+}
+
+.logo {
+  letter-spacing: -0.5px;
+}
+
+.heading {
+  font-size: 1.8rem;
+}
+
+.optionCard {
+  padding: 28px 14px;
+  cursor: pointer;
+  border: 1px solid #e3e5ea;
+  background-color: #ffffff;
+  transition: all 0.15s ease;
+}
+
+.optionCard:hover {
+  border-color: #b9c1ff;
+}
+
+.optionCardSelected {
+  border: 1.5px solid #3b5bfd;
+  background-color: #eef1ff;
+}
+
+.cardTitle {
+  font-size: 0.95rem;
+}
+
+.cardSubtitle {
+  font-size: 0.78rem;
+}
+
+.loginLink {
+  color: #3b5bfd;
+}
+
+.rightSide {
+    padding: 30px 10px;
+  background: linear-gradient(
+    155deg,
+    #0b1120 0%,
+    #0b1120 45%,
+    #16247d 75%,
+    #2f4bff 100%
+  );
+}
+
+.glow {
+  top: -60px;
+  right: 80px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(
+    circle,
+    rgba(180, 120, 40, 0.35) 0%,
+    rgba(180, 120, 40, 0) 70%
+  );
+  filter: blur(20px);
+}
+
+.testimonialCard {
+  max-width: 380px;
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.stars {
+  color: #f5b942;
+  letter-spacing: 2px;
+}
+
+.quoteText {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  font-size: 0.75rem;
+  background-color: #3b5bfd;
+}
+
+.avatarName {
+  font-size: 0.9rem;
+}
+
+.avatarRole {
+  font-size: 0.78rem;
+}
